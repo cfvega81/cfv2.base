@@ -29,6 +29,7 @@
       "@core/*": ["src/app/core/*"],
       "@data/*": ["src/app/data/*"],
       "@mocks/*": ["src/app/mocks/*"],
+      "@packs/*": ["src/app/packs/*"],
       "@shared/*": ["src/app/shared/*"],
       "@shared:components/*": ["src/app/shared/components/*"],
       "@shared:directives/*": ["src/app/shared/directives/*"],

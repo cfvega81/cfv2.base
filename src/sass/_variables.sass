@@ -1,0 +1,13 @@
+@use '@angular/material' as mat
+@include mat.core()
+@include mat.strong-focus-indicators()
+
+$v2c-primary: mat.define-palette(mat.$indigo-palette)
+$v2c-accent: mat.define-palette(mat.$blue-gray-palette)
+$v2c-warn: mat.define-palette(mat.$red-palette)
+
+$v2c-theme: mat.define-light-theme((color: (primary: $v2c-primary, accent: $v2c-accent, warn: $v2c-warn), typography: mat.define-typography-config()))
+$v2c-theme-inverse: mat.define-light-theme((color: (primary: $v2c-accent, accent: $v2c-primary, warn: $v2c-warn), typography: mat.define-typography-config()))
+
+@include mat.all-component-themes($v2c-theme)
+@include mat.strong-focus-indicators-theme($v2c-theme-inverse)

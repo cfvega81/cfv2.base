@@ -13,7 +13,8 @@ export class AuthService {
     return !!sessionStorage.getItem(SS_TOKEN);
   }
 
-  constructor() { }
+  constructor() {
+  }
 
   login(request: AuthenticationRequest): Observable<AuthenticationResponse> {
     sessionStorage.clear();
